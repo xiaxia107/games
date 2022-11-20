@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    background: #000 url(../img/bg.jpg) no-repeat center 100px;
+    background-size: 100% 100%;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: url(../img/bg.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+
+
+/* 游戏窗口box */
+
+#box {
+    position: absolute;
+    width: 800px;
+    height: 500px;
+    top: 100px;
+    left: 340px;
+    margin: 0 auto;
+}
+
+
+/* 设置ul的大小 */
+
+#box>ul {
+    width: 600px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, .4);
+    background-size: 100%;
+    border-bottom-left-radius: 20px;
+}
+
+
+/* 控制台 */
+
+#control {
+    z-index: 1000;
+    width: 200px;
+    float: right;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    font-family: "宋体";
+    border-bottom-right-radius: 20px;
+}
+
+#box>ul>li {
+    position: absolute;
+    list-style: none;
+    width: 90px;
+    height: 20px;
+    border: 5px solid rgba(0, 0, 0, .3);
+}
+
+
+/* 板子 */
+
+#plank {
+    width: 100px;
+    height: 15px;
+    position: absolute;
+    border-radius: 25px;
+    z-index: 999;
+    bottom: 0px;
+    left: 250px;
+    background-color: #000;
+}
+
+.big {
+    width: 600px;
+    height: 100%;
+    position: absolute;
+    left: 340px;
+    z-index: 999;
+}
+
+
+/* 球 */
+
+#ball {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+    z-index: 1000;
+    left: 290px;
+    bottom: 13px;
+}
+
+
+/* 控制台的书写 */
+
+#control #name {
+    font-size: 30px;
+    color: black;
+    height: 60px;
+    line-height: 60px;
+    width: 100%;
+    text-align: center;
+    display: block;
+    border-bottom: #000000 2px solid;
+    margin: 0 0 18px;
+}
+
+hr {
+    margin-top: 10px;
+}
+
+#control span {
+    margin-left: 50px;
+    line-height: 40px;
+    font-weight: 600;
+}
+
+#control span:nth-child(2) {
+    margin: 20px 20px;
+}
+
+
+/* 重置按钮 */
+
+#rest {
+    position: absolute;
+    width: 80px;
+    height: 35px;
+    right: 55px;
+    bottom: 20px;
+    background: rgba(255, 255, 255, 0.4);
+}
+
+#rest:hover {
+    opacity: .7;
+    transition: .2s;
+}
+
+
+/* 提示 */
+
+#hint {
+    font-size: 30px;
+    color: rgb(241, 255, 0);
+    text-shadow: 4px 3px 5px #ccc;
+    position: absolute;
+    left: 90px;
+    top: 250px;
+    animation: fangda .9s alternate infinite;
+}
+
+@keyframes fangda {
+    0% {}
+    100% {
+        transform: scale(1.4);
+    }
+}
+
+.title {
+    position: absolute;
+    left: 660px;
+    top: -45px;
+    color: #fff;
+    text-align: center;
+}
+
+.title h1 {
+    margin-top: 50px;
+    font-size: 50px;
+    letter-spacing: 3px;
+}
+
+.title h3 {
+    font-weight: 400;
+    color: #ccc;
+}
+
+
+/* left按钮 */
+
+
+/* #left {
+    position: absolute;
+    left: 100px;
+    top: 470px;
+    width: 60px;
+    height: 60px;
+    background-color: beige;
+    opacity: 0.2;
+    z-index: 1000;
+    text-align: center;
+    line-height: 60px;
+ 在这里设置行高达到居中的目的 
+
+
+}
+*/
+
+
+/* right按钮 */
+
+
+/*
+#right {
+    position: absolute;
+    top: 470px;
+    z-index: 1000;
+    left: 950px;
+    width: 60px;
+    height: 60px;
+    background-color: beige;
+    opacity: 0.2;
+    text-align: center;
+    line-height: 60px;
+    在这里设置行高达到居中的目的 
+}
+*/
+
+
+/* return */
+
+#return {
+    position: absolute;
+    bottom: 20px;
+    right: 50px;
+    width: 80px;
+    height: 40px;
+    color: #fff;
+    z-index: 600;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5) inset;
+}
+
+#father {
+    position: absolute;
+    left: 1400px;
+    transition: .4s;
+}

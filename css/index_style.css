@@ -1,0 +1,789 @@
+* {
+    margin: 0;
+    padding: 0;
+	
+}
+
+body,
+html {
+    width: 100%;
+    height: 2000px;
+    /* 调 */
+    background-color: #000000;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+	overflow-x: hidden;
+}
+
+
+/* 控制转场的 */
+
+#father {
+    width: 100%;
+    height: 100%;
+    /* 调 */
+    position: absolute;
+    transition: .2s;
+}
+
+#mask {
+    width: 100%;
+    height: 500px;
+    background-color: #42424f;
+    position: absolute;
+    opacity: 0.45;
+    z-index: 700;
+}
+
+#head {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: absolute;
+}
+
+#head video {
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: auto;
+    height: auto;
+}
+
+
+/* 视频上方的文字 */
+
+#font {
+    font-family: 'FontAwesome', courier;
+    position: absolute;
+    z-index: 810;
+    color: white;
+    width: 100%;
+    /* background-color: red; */
+}
+
+#font h1 {
+    font-family: "agency fb";
+    font-size: 55px;
+    width: 400px;
+    margin: 0 auto;
+    font-weight: 1000;
+    margin-top: 130px;
+}
+
+#font p {
+    font-size: 25px;
+    opacity: 0.7;
+    word-spacing: -2px;
+}
+
+#font p:nth-of-type(1) {
+    width: 690px;
+    margin: 0 auto;
+}
+
+#font p:nth-of-type(2) {
+    width: 950px;
+    margin: 0 auto;
+}
+
+
+/* 下滑按钮 */
+
+#slidedowm {
+    position: absolute;
+    z-index: 810;
+    bottom: 20%;
+    left: 50%;
+    color: white;
+    font-weight: 100;
+    transform: translateX(-50%);
+    /* 向左移自身的一半 */
+    cursor: pointer;
+    font-size: 50px;
+}
+
+
+/* 游戏入口的设计 */
+
+
+/* 这里用弹性布局 */
+
+#main {
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    top: 580px;
+    /* background-color: green; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.games {
+    width: 370px;
+    height: 450px;
+    background-color: #2C2C32;
+    border-radius: 5px;
+}
+
+
+/* 将左右单独拿出来设置 */
+
+#main>div:nth-child(1) {
+    margin-left: 70px;
+}
+
+#main>div:nth-child(3) {
+    margin-right: 70px;
+}
+
+
+/* 入口的图片设置 */
+
+.games_img {
+    width: 100%;
+    height: 200px;
+    background-color: red;
+    margin-left: 0px;
+}
+
+#main img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 下面我们来写按钮的样式 */
+
+#button_1 {
+    width: 300px;
+    height: 40px;
+    margin-top: 57px;
+    margin-left: 30px;
+    cursor: pointer;
+    background-color: #70C7BE;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+
+#button_2 {
+    width: 300px;
+    height: 40px;
+    margin-top: 57px;
+    margin-left: 33px;
+    cursor: pointer;
+    background-color: #7F92CF;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+
+#button_3 {
+    bottom: 20px;
+    width: 300px;
+    height: 40px;
+    margin-top: 75px;
+    margin-left: 30px;
+    cursor: pointer;
+    background-color: #9D7ED0;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+
+#button_1:hover,
+#button_2:hover,
+#button_3:hover {
+    transition: .2s;
+    opacity: 0.7;
+}
+
+
+/* 入口下的文字 */
+
+#main {
+    color: white;
+}
+
+#tank p:nth-of-type(1) {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 75px;
+}
+
+#tank p:nth-of-type(2) {
+    margin-top: 30px;
+    font-size: 13px;
+    font-weight: 300;
+    margin-left: 45px;
+}
+
+#tank p:nth-of-type(3) {
+    font-size: 13px;
+    font-weight: 300;
+    margin-left: 45px;
+}
+
+#tank p:nth-of-type(4) {
+    font-size: 13px;
+    font-weight: 300;
+    margin-left: 45px;
+}
+
+#birdfly p:nth-of-type(1) {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 135px;
+}
+
+#birdfly p:nth-of-type(2) {
+    margin-top: 30px;
+    font-size: 13px;
+    font-weight: 300;
+    margin-left: 45px;
+}
+
+#birdfly p:nth-of-type(3) {
+    font-size: 13px;
+    font-weight: 300;
+    margin-left: 45px;
+}
+
+#birdfly p:nth-of-type(4) {
+    font-size: 13px;
+    font-weight: 300;
+    margin-left: 45px;
+}
+
+#brick p:nth-of-type(1) {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 85px;
+}
+
+#brick p:nth-of-type(2) {
+    margin-top: 30px;
+    font-size: 13px;
+    font-weight: 300;
+    margin-left: 45px;
+}
+
+#brick p:nth-of-type(3) {
+    font-size: 13px;
+    font-weight: 300;
+    margin-left: 45px;
+}
+
+
+/* 细节介绍 */
+
+#details {
+    position: absolute;
+    width: 100%;
+    height: 1000px;
+    top: 530px;
+    /* 		background-color: red; */
+}
+
+#details #menu {
+    width: 300px;
+    height: 430px;
+    position: absolute;
+    background-color: #2C2C32;
+    left: -300px;
+    top: 50px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+
+/* 菜单栏中的标题 */
+
+#menu #caption {
+    font-size: 20px;
+    margin-left: 115px;
+    margin-top: 30px;
+    font-weight: 600;
+}
+
+
+/* 坦克部分 */
+
+#menu_tank {
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+}
+
+#menu_tank i {
+    font-size: 50px;
+    margin-left: 20px;
+}
+
+#menu_tank div {
+    font-size: 17px;
+    position: absolute;
+    top: 12px;
+    left: 75px;
+}
+
+
+/* 鸟 */
+
+#menu_birdfly {
+    position: absolute;
+    top: 155px;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+}
+
+#menu_birdfly i {
+    font-size: 35px;
+    margin-left: 25px;
+    margin-top: 120px;
+}
+
+#menu_birdfly div {
+    font-size: 17px;
+    position: absolute;
+    top: 12px;
+    left: 75px;
+}
+
+
+/* 其他 */
+
+#menu_rest {
+    position: absolute;
+    top: 340px;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+}
+
+#menu_rest i {
+    font-size: 35px;
+    margin-left: 25px;
+    margin-top: 120px;
+}
+
+#menu_rest div {
+    font-size: 17px;
+    position: absolute;
+    top: 12px;
+    left: 75px;
+}
+
+
+/* 打砖块 */
+
+#menu_brick {
+    position: absolute;
+    top: 280px;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+}
+
+#menu_brick i {
+    font-size: 35px;
+    margin-left: 25px;
+    margin-top: 120px;
+}
+
+#menu_brick div {
+    font-size: 17px;
+    position: absolute;
+    top: 12px;
+    left: 75px;
+}
+
+
+/* 开发者 */
+
+#menu_developer {
+    position: absolute;
+    top: 220px;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+}
+
+#menu_developer i {
+    font-size: 35px;
+    margin-left: 25px;
+    margin-top: 120px;
+}
+
+#menu_developer div {
+    font-size: 17px;
+    position: absolute;
+    top: 12px;
+    left: 75px;
+}
+
+#menu_tank:hover>i,
+#menu_birdfly:hover>i,
+#menu_brick:hover>i,
+#menu_developer:hover>i {
+    color: greenyellow;
+}
+
+
+/* 菜单框右边的具体信息框 */
+
+#message {
+    position: absolute;
+    width: 600px;
+	padding-top: 45px;
+    height: 500px;
+    background-color: #2C2C32;
+    top: 0px;
+    right: -700px;
+    transition: .5s;
+}
+
+
+/* 标题 */
+
+#message_caption {
+    color: white;
+    font-size: 30px;
+    margin-left: 180px;
+    font-weight: 600;
+}
+
+
+/* 4个框架的框架 */
+
+#message_tank {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#message_birds {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+
+/* 鸟下面的皮肤 */
+
+#message_birds_1 {
+    position: absolute;
+    background-image: url(../img/bird1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;
+    left: 50%;
+    margin-left: -50px;
+    top: 40px;
+    cursor: pointer;
+}
+
+#message_birds_2 {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-image: url(../img/bird_blue1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    top: 200px;
+    left: 70%;
+    cursor: pointer;
+}
+
+#message_birds_3 {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-image: url(../img/bird_yellow1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    top: 200px;
+    left: 18%;
+    cursor: pointer;
+}
+
+
+/* 三个选中三角形的整体移动 */
+
+#message_birds i {
+    position: absolute;
+    top: 80px;
+    left: 40px;
+    display: none;
+}
+
+
+/* 悬浮上皮肤后显示 */
+
+#message_birds_1:hover i,
+#message_birds_2:hover i,
+#message_birds_3:hover i {
+    display: block;
+}
+
+
+/* 鸟界面的按钮 */
+
+#message_birds_button {
+    width: 200px;
+    height: 40px;
+    margin-top: 330px;
+    margin-left: 200px;
+    cursor: pointer;
+    background-color: #9D7ED0;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+
+
+/* 打砖块 */
+
+#message_bricks {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+#message_bricks_font {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+    text-indent: 2em;
+}
+
+
+/* 开发者 */
+
+#message_Developer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+
+/* 页脚设计 */
+
+#floor {
+    width: 100%;
+    height: 350px;
+    background-color: #1B1B1F;
+    position: absolute;
+    top: 1200px;
+}
+
+#floor h1 {
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+
+#floor>p {
+    text-align: center;
+    font-size: 13px;
+    font-weight: 100;
+    opacity: 0.7;
+}
+
+
+/* 页脚的icon图标 */
+
+#floor_icon {
+    width: 210px;
+    height: 50px;
+    margin: auto;
+    text-align: center;
+    margin-top: 25px;
+    cursor: pointer;
+    border: none;
+}
+
+#floor_icon>.iconfont {
+    font-size: 40px;
+    /* margin-right: 20px; */
+    cursor: pointer;
+    opacity: 0.2;
+}
+
+#floor_icon i:nth-child(1) {
+    font-size: 50px;
+    /* position: absolute;
+    top: 180px;
+    left: 546px; */
+    cursor: pointer;
+}
+
+#floor_icon i:nth-child(2) {
+    font-size: 45px;
+    font-weight: 100;
+    line-height: 40px;
+    /* position: absolute;
+    top: 188px;
+    left: 607px; */
+    cursor: pointer;
+}
+
+#floor_icon i:nth-child(3) {
+    font-size: 53px;
+    /* position: absolute;
+    top: 178px;
+    left: 661px; */
+    cursor: pointer;
+}
+
+#floor_icon i:nth-child(4) {
+    font-size: 47px;
+    /* position: absolute;
+    top: 180px;
+    left: 726px; */
+    cursor: pointer;
+}
+
+
+/* icon 的hover事件 */
+
+#floor_icon>.iconfont:hover {
+    /* position: absolute; */
+    color: white;
+    opacity: 1;
+}
+
+#floor_icon>a {
+    color: white;
+    opacity: 0.2;
+    text-decoration: none;
+}
+
+#floor_icon>a:hover {
+    color: white;
+    opacity: 1;
+}
+
+iframe {
+    display: none;
+}
+
+
+/* 飞机皮肤的定位 */
+
+#message_tank_1 {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-image: url(../img/airplane.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    top: 200px;
+    left: 18%;
+    cursor: pointer;
+}
+
+#message_tank_2 {
+    position: absolute;
+    background-image: url(../img/fj.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;
+    left: 26%;
+    margin-left: -50px;
+    top: 40px;
+    cursor: pointer;
+}
+
+#message_tank_3 {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-image: url(../img/airplane2.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    top: 200px;
+    left: 66%;
+    cursor: pointer;
+}
+
+#message_tank_4 {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-image: url(../img/airplane3.png);
+    background-size: 120%;
+    background-repeat: no-repeat;
+    top: 40px;
+    left: 63%;
+    cursor: pointer;
+}
+
+
+/* 飞机下面的三角形 */
+
+#message_tank i {
+    position: absolute;
+    top: 80px;
+    left: 40px;
+    display: none;
+}
+
+#message_tank_1>i {
+    left: 40px;
+    top: 95px;
+}
+
+#message_tank_2>i {
+    left: 40px;
+}
+
+#message_tank_3>i {
+    left: 38px;
+    top: 96px;
+}
+
+#message_tank_4>i {
+    left: 50px;
+}
+
+
+/* tank界面的按钮 */
+
+#message_tank_button {
+    width: 200px;
+    height: 40px;
+    margin-top: 330px;
+    margin-left: 200px;
+    cursor: pointer;
+    background-color: #9D7ED0;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}

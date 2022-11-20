@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #000;
+}
+
+#father {
+    position: absolute;
+    left: 50%;
+}
+
+li {
+    list-style: none;
+}
+
+.nav {
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+    line-height: 50px;
+    background-color: rgb(44, 44, 50);
+}
+
+.nav .zuo-nav {
+    float: left;
+}
+
+.nav .zuo-nav>li {
+    float: left;
+}
+
+.nav li a {
+    display: block;
+    padding: 0 18px;
+    text-decoration: none;
+    color: #999;
+    font-size: 14px;
+}
+
+.nav li a.qubu {
+    background-color: #000;
+    color: #fff;
+    height: 50px;
+}
+
+.nav ul li a:hover {
+    color: #fff;
+}
+
+.nav .you-nav {
+    width: 350px;
+    height: 50px;
+    float: right;
+}
+
+.nav .you-nav li a {
+    margin: 0 0 0 10px;
+    padding: 0 7px;
+    font-size: 14px;
+}
+
+.nav .you-nav li {
+    float: right;
+}
+
+
+/* banner部分 */
+
+#banner {
+    width: 1200px;
+    height: 1100px;
+    margin: auto;
+}
+
+
+/* main-nav部分 */
+
+.hong:hover {
+    color: rgb(232, 100, 97);
+}
+
+.main-nav {
+    height: 190px;
+    border-radius: 10px;
+    line-height: 24px;
+    background-color: rgb(44, 44, 50);
+    margin-top: 25px;
+    padding: 27px 0 26px 50px;
+}
+
+.main-nav .fenlei {
+    height: 80px;
+    width: 1070px;
+    border-bottom: 1px solid #ccc;
+}
+
+.main-nav .nandu {
+    height: 40px;
+    margin-top: 20px;
+}
+
+.main-nav .leixing {
+    margin-top: 10px;
+    height: 80px;
+}
+
+.main-nav h3 {
+    float: left;
+    width: 88px;
+    height: 24px;
+    color: #999;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.main-nav span {
+    float: left;
+    width: 52px;
+    height: 24px;
+    text-align: center;
+    font-size: 12px;
+    margin-right: 16px;
+    margin-bottom: 8px;
+    background: rgb(223, 220, 225);
+    border-radius: 20px;
+    color: rgb(232, 100, 97);
+}
+
+.main-nav ul {
+    float: left;
+    width: 914px;
+}
+
+.main-nav ul li {
+    float: left;
+    padding: 0 12px;
+    margin: 0 16px 8px 0;
+}
+
+.main-nav ul li a {
+    display: block;
+    color: rgb(104, 130, 140);
+    font-size: 14px;
+    color: #999;
+    height: 24px;
+    line-height: 24px;
+    text-decoration: none;
+}
+
+.title {
+    height: 64px;
+    line-height: 64px;
+    color: #999;
+}
+
+.title span {
+    display: inline-block;
+    width: 52px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.title span.hot {
+    color: #fff;
+    background-color: rgb(51, 51, 51);
+    border-radius: 10px;
+}
+
+#banner .list-box .list {
+    background-color: rgb(44, 44, 50);
+    height: 340px;
+    padding-top: 40px;
+    border-radius: 10px;
+}
+
+#banner .list-box .list li {
+    width: 100px;
+    height: 150px;
+    float: left;
+    margin: 0 27px 18px 0;
+}
+
+#banner .list-box .list li:nth-child(9n) {
+    margin-right: 0;
+}
+
+#banner .list-box .list li:nth-child(1),
+#banner .list-box .list li:nth-child(10n) {
+    margin-left: 40px;
+}
+
+.list-box .list li .lis-tu {
+    width: 100px;
+    height: 100px;
+    border-radius: 13px;
+    overflow: hidden;
+}
+
+.list-box ul li .lis-tu img {
+    width: 100%;
+    transition: .4s;
+}
+
+.list-box ul li .lis-tu img:hover {
+    transform: scale(1.1);
+}
+
+.list-box ul li p {
+    margin-top: 14px;
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+}
+
+
+/* 页脚 */
+
+#floor {
+    margin-top: 120px;
+    width: 100%;
+    height: 270px;
+    color: white;
+}
+
+#floor h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    height: 60px;
+}
+
+#floor>p {
+    text-align: center;
+    font-size: 13px;
+    font-weight: 100;
+    opacity: 0.7;
+}
+
+
+/* 页脚的icon图标 */
+
+#floor_icon {
+    width: 260px;
+    height: 60px;
+    margin: auto;
+    text-align: center;
+    margin-top: 25px;
+    cursor: pointer;
+    border: none;
+}
+
+#floor_icon .iconfont {
+    color: #fff;
+    font-size: 50px;
+    cursor: pointer;
+    opacity: 0.2;
+    margin-left: 5px;
+}
+
+#floor_icon .iconfont:hover {
+    opacity: 1;
+}

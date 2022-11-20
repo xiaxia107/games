@@ -1,0 +1,58 @@
+{
+  "id": "1923873",
+  "name": "ncda",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "8147092",
+      "name": "人",
+      "font_class": "ren",
+      "unicode": "e648",
+      "unicode_decimal": 58952
+    },
+    {
+      "icon_id": "3192593",
+      "name": "微信",
+      "font_class": "weixin",
+      "unicode": "e6f2",
+      "unicode_decimal": 59122
+    },
+    {
+      "icon_id": "5688637",
+      "name": "微博",
+      "font_class": "weibo",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "15760458",
+      "name": "qq",
+      "font_class": "qq-copy",
+      "unicode": "e6f3",
+      "unicode_decimal": 59123
+    },
+    {
+      "icon_id": "15760459",
+      "name": "flash",
+      "font_class": "flash-copy",
+      "unicode": "e6f4",
+      "unicode_decimal": 59124
+    },
+    {
+      "icon_id": "9576438",
+      "name": "星星",
+      "font_class": "xingxing",
+      "unicode": "e62c",
+      "unicode_decimal": 58924
+    },
+    {
+      "icon_id": "15723769",
+      "name": "星星",
+      "font_class": "bianzu-copy",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+	user-select: none;
+}
+
+body,
+html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+	overflow-x: hidden;
+}
+
+#father {
+	position: absolute;
+	top: 60%;
+	left: 20%;
+	transition: .4s;
+}
+
+
+html {
+    background: url(../img/bg.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+#canvas {
+    border-radius: 25px;
+    background-color: white;
+    background-image: url(../img/birdbg.png);
+    background-size: 800px 400px;
+    margin-right: 110px;
+}
+
+.bird {
+    width: 20px;
+    height: 20px;
+}
+
+#grade {
+    user-select: none;
+    color: #fff;
+    margin: -300px 50px 0 0;
+    font-size: 24px;
+}
+
+
+/* title */
+
+.title {
+    width: 100%;
+    position: absolute;
+    left: -60px;
+    top: -320%;
+    color: #fff;
+    text-align: center;
+}
+
+.title h1 {
+    margin-top: 50px;
+    font-size: 50px;
+    letter-spacing: 3px;
+}
+
+.title h3 {
+    font-weight: 400;
+    color: #ccc;
+}
+
+
+/* button */
+
+.button {
+    position: absolute;
+    right: -20px;
+    bottom: -100px;
+}
+
+.button input {
+    /* margin: 330px 0 0 20px; */
+    width: 80px;
+    height: 40px;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5) inset;
+}

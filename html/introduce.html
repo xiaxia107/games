@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>introduce</title>
+    <link rel="stylesheet" href="../css/introduce.css">
+    <link rel="stylesheet" type="text/css" href="../css/iconfont.css" />
+    <link rel="shortcut icon" href="../img/logo.ico" />
+</head>
+
+
+<body>
+    <div id="father">
+        <div class="title">
+            <h1>game introduce</h1>
+            <h3>by reading</h3>
+        </div>
+        <div class="main">
+            <div class="da-tu">
+                <img src="../img/niao.jpg" alt="">
+            </div>
+            <div class="jieshao name">
+                <p>Flash bird game introduction</p>
+                <div>________________</div>
+                <span>vehicula urna sed justo bibendum</span>
+            </div>
+            <div class="neirong">
+                <p>"Happy bird" is a work developed by Dong Nguyen, an independent game developer from Vietnam. The game was launched on May 24, 2013 and suddenly became popular in February 2014. In February 2014, flappy bird was removed from apple and Google
+                    App Stores by the developers themselves. In August 2014, the company officially returned to app store and officially joined the multiplayer combat mode that flappy fans have been looking forward to for a long time. In the game, the
+                    player must control a bird to cross the obstacles composed of various lengths of water pipes.</p>
+                <p>
+                    "Happy bird" is a work developed by Dong Nguyen, an independent game developer from Vietnam. The game was launched on May 24, 2013 and suddenly became popular in February 2014. In February 2014, flappy bird was removed from apple and Google App Stores
+                    by the developers themselves. In August 2014, the company officially returned to app store and officially joined the multiplayer combat mode that flappy fans have been looking forward to for a long time. In the game, the player must
+                    control a bird to cross the obstacles composed of various lengths of water pipes.
+                </p>
+            </div>
+            <div class="si-tu name">
+                <div class="nei">
+                    <p>Flash bird game introduction</p>
+                    <div>________________</div>
+                    <span>vehicula urna sed justo bibendum</span>
+                    <img src="../img/bird_blue3.png" alt="">
+                    <img src="../img/bird_yellow3.png" alt="">
+                    <img src="../img/bird3.png" alt="">
+                    <img src="../img/bird_blue3.png" alt="">
+                </div>
+
+            </div>
+            <div class="main-intro">
+                <div class="left">
+                    <img src="../img/birdblue1.jfif" alt="">
+                </div>
+                <div class="right" style="overflow: hidden;">
+                    <p>Operation guide</p>
+                    <span>
+						In the "flappybird" game, players only need to use the mouse to control, click on the screen, the bird will fly up, click will continue to fly high. Release the mouse, it will drop quickly. So the player should control the bird to fly forward, and then pay attention to avoid the uneven pipes on the way.
+					</span>
+                </div>
+            </div>
+            <div class="main-intro">
+                <div class="right" style="overflow: hidden;">
+                    <p>Operation guide</p>
+                    <span>
+						1. After the game starts, click on the screen. Remember that there are intermittent clicks on the screen. Don't let the birds fall. <br />
+	
+						2. Try to keep a peaceful mood, don't hit too hard when you order, and try to watch the bird. <br />
+						
+						3. The score of the game is that the bird passes through a pillar safely and does not hit is 1 point. Of course, if you run into it, you'll die. There's only one life.
+					</span>
+                </div>
+                <div class="left">
+                    <img src="../img/birdblue1.jfif" alt="">
+                </div>
+
+            </div>
+        </div>
+        <div id="floor">
+            <h1>Website Stated</h1>
+            <p>This game web page by Youzilong and Xia Yating </p>
+            <p>development how what comments click below the QQ link to contact us</p>
+            <p>Look forward to the continuous development of the site</p>
+            <div id="floor_icon">
+                <i class="iconfont four">&#xe6f3;</i>
+                <i class="iconfont">&#xe618;</i>
+                <i class="iconfont">&#xe6f2;</i>
+                <i class="iconfont">&#xe6f4;</i>
+            </div>
+            <input type="button" value="return" id="floor_return" />
+            <input type="button" value="home" id="floor_home" />
+        </div>
+    </div>
+</body>
+<script src="../js/jquery-3.4.1.js"></script>
+<script type="text/javascript">
+    $("#father").animate({
+        left: 120 + "px"
+    }, 300)
+
+
+    // 点击home 按钮返回主页
+    $("#floor_home").click(function() {
+        console.log("1")
+        document.getElementById("father").style.transform = 'rotate(0deg)scale(0.5)';
+        $("#father").animate({
+            left: 1500 + "px"
+        }, 300)
+
+
+        setTimeout(function() {
+            window.location.replace("../index.html");
+        }, 400)
+    })
+
+
+    // 点击return 按钮返回主页
+    $("#floor_return").click(function() {
+        console.log("1")
+        document.getElementById("father").style.transform = 'rotate(0deg)scale(0.5)';
+        $("#father").animate({
+            left: 1500 + "px"
+        }, 300)
+
+
+        setTimeout(function() {
+            window.location.replace("birdfly.html");
+        }, 400)
+    })
+</script>
+
+</html>
